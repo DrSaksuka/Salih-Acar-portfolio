@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "Student Automation System",
+        "description": "C# ve MSSQL kullanılarak geliştirilmiş öğrenci otomasyon projesi. QR barkod entegrasyonu planlı.",
+        "stack": [
+            "C#",
+            "MSSQL",
+            "WinForms"
+        ],
+        "image": "/images/student-automation.png",
+        "link": ""
+    },
+    {
+        "id": 2,
+        "title": "Pinedu (React Demo)",
+        "description": "React ile hazırlanmış eğitim platformu demo arayüzü (statik veri).",
+        "stack": [
+            "React",
+            "CSS",
+            "React Router"
+        ],
+        "image": "/images/pinedu-demo.png",
+        "link": ""
+    },
+    {
+        "id": 3,
+        "title": "Small Utility Tools",
+        "description": "Çeşitli küçük javascript tool'lar (converter, validators).",
+        "stack": [
+            "JavaScript",
+            "HTML",
+            "CSS"
+        ],
+        "image": "/images/tools.png",
+        "link": ""
+    }
+]
