@@ -1,14 +1,11 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
-// 1. Gerekli kütüphaneleri ve logoları import ediyoruz
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
-import logoDark from '../assets/logo-dark.png'; // Siyah logo
-import logoLight from '../assets/logo-light.png'; // Beyaz logo
-
+import logoDark from '../assets/logo-dark.png';
+import logoLight from '../assets/logo-light.png';
 export default function Home() {
-    // 2. Context'ten mevcut tema durumunu alıyoruz
+
     const { theme } = useContext(ThemeContext);
 
     return (
@@ -21,11 +18,14 @@ export default function Home() {
                 </div>
 
                 {/* 3. Temaya göre hangi logonun gösterileceğini belirliyoruz */}
-                <img
-                    src={theme === 'dark' ? logoLight : logoDark}
-                    alt="Salih Acar Logo"
-                    style={{ width: 220, height: 220, objectFit: 'contain' }}
-                />
+
+                <div className="logo-wrapper">
+                    <img
+                        src={theme === 'dark' ? logoLight : logoDark}
+                        alt="Salih Acar Logo"
+                        style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+                    />
+                </div>
 
             </section>
         </motion.div>

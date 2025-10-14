@@ -4,9 +4,8 @@ import ThemeToggle from "./ThemeToggle";
 // 1. Gerekli kütüphaneleri ve logoları import ediyoruz
 import { useContext } from "react";
 import { ThemeContext } from '../context/ThemeContext';
-import logoDark from '../assets/logo-dark.png'; // Siyah logo
-import logoLight from '../assets/logo-light.png'; // Beyaz logo
-
+import logoDark from '../assets/logo-dark.png';
+import logoLight from '../assets/logo-light.png';
 const linkStyle = isActive => ({
     marginRight: 12,
     padding: "8px 10px",
@@ -27,11 +26,14 @@ export default function Navbar() {
                 <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
 
                     {/* 3. Temaya göre hangi logonun gösterileceğini belirliyoruz */}
-                    <img
-                        src={theme === 'dark' ? logoLight : logoDark}
-                        alt="Site Logosu"
-                        style={{ width: 44, height: 44 }}
-                    />
+                    {/* Navbar.js'deki yeni logo yapısı */}
+                    <div className="navbar-logo-wrapper">
+                        <img
+                            src={theme === 'dark' ? logoLight : logoDark}
+                            alt="Site Logosu"
+                            style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+                        />
+                    </div>
 
                     <div>
                         <div style={{ fontWeight: 800 }}>Salih Acar</div>

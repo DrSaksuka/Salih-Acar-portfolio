@@ -63,3 +63,31 @@ textarea {
     color var(--transition-speed) ease,
     border-color var(--transition-speed) ease;
 }
+
+/* Ana sayfadaki büyük logo için */
+.logo-wrapper {
+  width: 220px;
+  height: 220px;
+  padding: 20px;
+  background-color: var(--card);
+  /* Temadaki kart rengini alacak */
+  border-radius: 24px;
+  border: 1px solid rgba(120, 120, 120, 0.08);
+}
+
+/* Navbar'daki küçük logo için */
+.navbar-logo-wrapper {
+  width: 44px;
+  height: 44px;
+  padding: 6px;
+  background-color: var(--card);
+  /* Temadaki kart rengini alacak */
+  border-radius: 12px;
+  border: 1px solid rgba(120, 120, 120, 0.08);
+}
+
+/* Karanlık modda çerçeve rengini ayarla */
+:root[data-theme="dark"] .logo-wrapper,
+:root[data-theme="dark"] .navbar-logo-wrapper {
+  border-color: rgba(255, 255, 255, 0.05);
+}
