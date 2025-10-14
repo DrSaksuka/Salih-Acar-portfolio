@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/Salih-Acar-portfolio/static/css/main.fa1d71c7.css",
+    "main.js": "/Salih-Acar-portfolio/static/js/main.9156ddc0.js",
+    "static/js/280.e097023a.chunk.js": "/Salih-Acar-portfolio/static/js/280.e097023a.chunk.js",
+    "static/js/453.d27ec394.chunk.js": "/Salih-Acar-portfolio/static/js/453.d27ec394.chunk.js",
+    "static/media/logo-light.png": "/Salih-Acar-portfolio/static/media/logo-light.42338b9cb2104b4e545e.png",
+    "static/media/logo-dark.png": "/Salih-Acar-portfolio/static/media/logo-dark.65c892eafedf8b387c0c.png",
+    "index.html": "/Salih-Acar-portfolio/index.html",
+    "main.fa1d71c7.css.map": "/Salih-Acar-portfolio/static/css/main.fa1d71c7.css.map",
+    "main.9156ddc0.js.map": "/Salih-Acar-portfolio/static/js/main.9156ddc0.js.map",
+    "453.d27ec394.chunk.js.map": "/Salih-Acar-portfolio/static/js/453.d27ec394.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fa1d71c7.css",
+    "static/js/main.9156ddc0.js"
+  ]
+}
