@@ -91,3 +91,91 @@ textarea {
 :root[data-theme="dark"] .navbar-logo-wrapper {
   border-color: rgba(255, 255, 255, 0.05);
 }
+
+/* src/index.css dosyasının en altına ekle */
+
+/* Orta Boy Ekranlar (Tabletler) - Örnek: 992px ve altı */
+@media (max-width: 992px) {
+  .container {
+    padding: 16px;
+    /* İç boşlukları azalt */
+  }
+
+  /* Gerekirse diğer genel ayarlamalar */
+}
+
+/* Küçük Ekranlar (Mobil Cihazlar) - Örnek: 768px ve altı */
+@media (max-width: 768px) {
+
+  /* Navbar'ı düzenle */
+  header .container {
+    flex-direction: column;
+    /* Logoyu ve menüyü alt alta getir */
+    gap: 10px;
+  }
+
+  header .container>div:last-child {
+    /* Menü linklerinin olduğu div */
+    display: flex;
+    flex-wrap: wrap;
+    /* Linkleri sığmazsa alt satıra indir */
+    justify-content: center;
+    /* Ortala */
+    gap: 5px;
+    /* Linkler arası boşluğu azalt */
+  }
+
+  /* Home sayfasındaki bölümü düzenle */
+  .home-section {
+    /* Home.js içindeki section'a bu class'ı verebilirsin */
+    flex-direction: column-reverse;
+    /* Resmi üste, metni alta al */
+    text-align: center;
+    /* Metinleri ortala */
+  }
+
+  .logo-wrapper {
+    /* Home.js logosu */
+    width: 180px;
+    /* Logoyu biraz küçült */
+    height: 180px;
+    margin-bottom: 20px;
+    /* Altına boşluk ekle */
+  }
+
+  h1 {
+    font-size: 28px;
+    /* Başlık fontunu küçült */
+  }
+
+  /* Projects sayfasındaki grid'i düzenle */
+  .projects-grid {
+    /* Projects.js içindeki motion.div'e bu class'ı verebilirsin */
+    grid-template-columns: 1fr;
+    /* Kartları tek sütun yap */
+  }
+
+  /* Footer'ı düzenle */
+  footer .container {
+    flex-direction: column;
+    /* Yazıyı ve ikonları alt alta getir */
+    gap: 10px;
+    text-align: center;
+  }
+}
+
+/* Çok Küçük Ekranlar - Örnek: 480px ve altı */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 24px;
+    /* Başlığı daha da küçült */
+  }
+
+  header .container>div:last-child a {
+    /* Menü linkleri */
+    padding: 6px 8px;
+    /* Linklerin iç boşluğunu azalt */
+    font-size: 14px;
+    /* Linklerin fontunu küçült */
+  }
+}
