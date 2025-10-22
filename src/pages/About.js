@@ -8,7 +8,7 @@ export default function About() {
             <section style={{ marginTop: 20 }}>
                 <h3>Yetenekler</h3>
                 <ul style={{ color: "var(--muted)", marginTop: 8 }}>
-                    <li>React,Flutter, JavaScript, HTML, CSS</li>
+                    <li>React, Flutter, JavaScript, HTML, CSS</li>
                     <li>C# ve MSSQL</li>
                     <li>Responsive Tasarım, Git</li>
                 </ul>
